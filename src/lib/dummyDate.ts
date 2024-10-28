@@ -1,6 +1,7 @@
 export const servicesInfo = [
   {
     id: 1,
+    slug: "one-hour",
     name: "30 Mins Jetcar Ride",
     showImage: "/images/services/thirty_mins_ride.png",
     about:
@@ -25,6 +26,7 @@ export const servicesInfo = [
   },
   {
     id: 2,
+    slug: "thirty-mins",
     name: "1 Hour Jetcar Ride",
     showImage: "/images/services/one_hr_ride.svg",
     about:
@@ -49,6 +51,7 @@ export const servicesInfo = [
   },
   {
     id: 3,
+    slug: "party",
     name: "Party Jet car Ride",
     showImage: "/images/services/party_ride.png",
     about:
@@ -72,7 +75,6 @@ export const servicesInfo = [
     ],
   },
 ];
-
 
 export const rideBenefits = [
   {
@@ -99,4 +101,4 @@ export const rideBenefits = [
     icon: "/images/icons/User_alt_duotone.svg",
     text: "Guides",
   },
-]
+];

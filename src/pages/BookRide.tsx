@@ -12,6 +12,7 @@ const BookRide = () => {
           <div className="w-frame py-[2rem] px-[5rem]">
             <BookServiceWrapper
               gallery={item.gallery}
+              slug={item.slug}
               image={item.showImage}
               about={item.about}
               prices={item.prices}

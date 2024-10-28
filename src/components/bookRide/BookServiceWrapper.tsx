@@ -10,6 +10,7 @@ interface BookServiceWrapperProps {
   image: string;
   gallery: string[];
   direction?: "right-to-left" | "left-to-right";
+  slug: string;
 }
 const BookServiceWrapper: FC<BookServiceWrapperProps> = ({
   about,
@@ -18,6 +19,7 @@ const BookServiceWrapper: FC<BookServiceWrapperProps> = ({
   gallery,
   prices,
   direction = "left-to-right",
+  slug
 }) => {
   return (
     <div
@@ -43,6 +45,7 @@ const BookServiceWrapper: FC<BookServiceWrapperProps> = ({
         about={about}
         prices={prices}
         serviceName={serviceName}
+        slug={slug}
       />
 
      

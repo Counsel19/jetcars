@@ -16,6 +16,7 @@ interface BookRideCardProps {
   about: string;
   prices: amountType[];
   images: string[];
+  slug: string;
 }
 
 const BookRideCard: FC<BookRideCardProps> = ({
@@ -23,13 +24,14 @@ const BookRideCard: FC<BookRideCardProps> = ({
   prices,
   serviceName,
   images,
+  slug
 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [bookingStep, setBookingStep] = useState(1);
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="bg-primary z-10  rounded-[1rem] relative">
+    <div id={slug} className="bg-primary z-10  rounded-[1rem] relative">
       <div className="grid h-full grid-rows-[1fr_5fr] p-[3rem]">
         <div className="flex justify-between gap-6 px-4">
           <h3 className="text-[4rem] leading-[4rem] text-white">

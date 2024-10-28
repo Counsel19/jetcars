@@ -8,19 +8,19 @@ const Services = () => {
 
       <div className="grid grid-cols-2 grid-rows-2 gap-[2rem] ">
         <ServiceCard
-          link=""
+          link="/book-a-ride#one-hour"
           image="/images/services/one_hr_ride.svg"
           serviceName="1 Hour Jetcar Ride"
         />
         <div className="row-span-2">
           <ServiceCard
-            link=""
+            link="/book-a-ride#thirty-mins"
             image="/images/services/thirty_mins_ride.png"
             serviceName="30 mins Jetcar Ride"
           />
         </div>
         <ServiceCard
-          link=""
+          link="/book-a-ride#party"
           image="/images/services/party_ride.png"
           serviceName="Party Jet car Ride"
         />

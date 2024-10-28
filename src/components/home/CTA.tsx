@@ -1,6 +1,8 @@
 import { Zap } from "lucide-react";
 import SectionHeading from "../shared/atoms/SectionHeading";
-import { Button } from "../ui/button";
+import { Button, buttonVariants } from "../ui/button";
+import { Link } from "react-router-dom";
+import { cn } from "@/lib/utils";
 
 const CTA = () => {
   return (
@@ -16,10 +18,18 @@ const CTA = () => {
           classnames="text-center text-white"
         />
 
-        <Button className="gap-3 flex w-[40rem] z-20 mx-auto border font-semibold text-black  border-white">
+        <Link
+          to={"/book-a-ride"}
+          className={cn(
+            buttonVariants({
+              className:
+                "gap-3 flex w-[40rem] z-20 mx-auto border font-semibold text-black  border-white",
+            })
+          )}
+        >
           <Zap />
           Book a Ride Now
-        </Button>
+        </Link>
       </div>
     </div>
   );
