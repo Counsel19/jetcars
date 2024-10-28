@@ -1,6 +1,6 @@
 import { Zap } from "lucide-react";
 import SectionHeading from "../shared/atoms/SectionHeading";
-import { Button, buttonVariants } from "../ui/button";
+import { buttonVariants } from "../ui/button";
 import { Link } from "react-router-dom";
 import { cn } from "@/lib/utils";
 
